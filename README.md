@@ -8,7 +8,7 @@ Open the schematic with [KiCad](http://kicad-pcb.org). Includes symbols for the 
 Wire the D and C inputs to GPIO outputs, control as follows:
 
 | D | C | operation | h-bridge K1/K2/K3/K4 |
-| - | - | --------- | -------------------- |
+| --- | --- | --------- | -------------------- |
 | 0 | 0 | forward   | 0110 |
 | 0 | 1 | reverse   | 1001 |
 | 1 | 0 | coast     | 0000 |
