@@ -1,4 +1,4 @@
-update=Thursday, September 08, 2016 'PMt' 11:50:17 PM
+update=Friday, September 09, 2016 'AMt' 01:15:15 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -56,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=812h-1a
+LibName31=motor

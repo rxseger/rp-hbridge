@@ -541,8 +541,4 @@ Text Notes 2050 4600 0    60   ~ 0
 control logic
 Text Notes 6050 2950 0    60   ~ 0
 H-bridge
-Text Notes 7300 7500 0    60   ~ 0
-rp-hbridge\n
-Text Notes 7100 6850 0    60   ~ 0
-H-Bridge with 4xSPST relays driven by NPN transitors controlled by \nMOSFET-based NOR gate for interfacing tray motor to GPIO Raspberry Pi
 $EndSCHEMATC
