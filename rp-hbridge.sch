@@ -147,16 +147,16 @@ $EndComp
 $Comp
 L +5V #PWR?
 U 1 1 57D26FA7
-P 6150 1450
-F 0 "#PWR?" H 6150 1300 50  0001 C CNN
-F 1 "+5V" H 6150 1590 50  0000 C CNN
-F 2 "" H 6150 1450 50  0000 C CNN
-F 3 "" H 6150 1450 50  0000 C CNN
-	1    6150 1450
+P 6150 1150
+F 0 "#PWR?" H 6150 1000 50  0001 C CNN
+F 1 "+5V" H 6150 1290 50  0000 C CNN
+F 2 "" H 6150 1150 50  0000 C CNN
+F 3 "" H 6150 1150 50  0000 C CNN
+	1    6150 1150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NPN_EBC Q?
+L Q_NPN_EBC Q1
 U 1 1 57D277B4
 P 4250 2050
 F 0 "Q1" H 4550 2100 50  0000 R CNN
@@ -167,7 +167,7 @@ F 3 "" H 4250 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NPN_EBC Q?
+L Q_NPN_EBC Q2
 U 1 1 57D27919
 P 4250 4400
 F 0 "Q2" H 4550 4450 50  0000 R CNN
@@ -178,7 +178,7 @@ F 3 "" H 4250 4400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NPN_EBC Q?
+L Q_NPN_EBC Q3
 U 1 1 57D27991
 P 7900 2050
 F 0 "Q3" H 8200 2100 50  0000 R CNN
@@ -189,7 +189,7 @@ F 3 "" H 7900 2050 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Q_NPN_EBC Q?
+L Q_NPN_EBC Q4
 U 1 1 57D27A9F
 P 7950 4400
 F 0 "Q4" H 8250 4450 50  0000 R CNN
@@ -200,7 +200,7 @@ F 3 "" H 7950 4400 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R?
+L R R1
 U 1 1 57D285AE
 P 3900 2050
 F 0 "R1" V 3980 2050 50  0000 C CNN
@@ -244,7 +244,7 @@ F 3 "" H 8300 4400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Q_NMOS_GDS Q?
+L Q_NMOS_GDS Q5
 U 1 1 57D29759
 P 1900 3750
 F 0 "Q5" H 2200 3800 50  0000 R CNN
@@ -266,36 +266,14 @@ F 3 "" H 2900 3750 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L R R?
-U 1 1 57D299D7
-P 2300 3150
-F 0 "R5" V 2380 3150 50  0000 C CNN
-F 1 "47k" V 2300 3150 50  0000 C CNN
-F 2 "" V 2230 3150 50  0000 C CNN
-F 3 "" H 2300 3150 50  0000 C CNN
-	1    2300 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
+L R R6
 U 1 1 57D29A53
-P 2500 3150
-F 0 "R6" V 2580 3150 50  0000 C CNN
-F 1 "1k" V 2500 3150 50  0000 C CNN
-F 2 "" V 2430 3150 50  0000 C CNN
-F 3 "" H 2500 3150 50  0000 C CNN
-	1    2500 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR?
-U 1 1 57D2A8C2
-P 2400 2800
-F 0 "#PWR?" H 2400 2650 50  0001 C CNN
-F 1 "+5V" H 2400 2940 50  0000 C CNN
-F 2 "" H 2400 2800 50  0000 C CNN
-F 3 "" H 2400 2800 50  0000 C CNN
-	1    2400 2800
+P 2400 3150
+F 0 "R6" V 2480 3150 50  0000 C CNN
+F 1 "1k" V 2400 3150 50  0000 C CNN
+F 2 "" V 2330 3150 50  0000 C CNN
+F 3 "" H 2400 3150 50  0000 C CNN
+	1    2400 3150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -312,12 +290,12 @@ $EndComp
 $Comp
 L R R7
 U 1 1 57D2B0B3
-P 6300 4200
-F 0 "R7" V 6380 4200 50  0000 C CNN
-F 1 "47" V 6300 4200 50  0000 C CNN
-F 2 "" V 6230 4200 50  0000 C CNN
-F 3 "" H 6300 4200 50  0000 C CNN
-	1    6300 4200
+P 6150 1450
+F 0 "R7" V 6230 1450 50  0000 C CNN
+F 1 "47" V 6150 1450 50  0000 C CNN
+F 2 "" V 6080 1450 50  0000 C CNN
+F 3 "" H 6150 1450 50  0000 C CNN
+	1    6150 1450
 	1    0    0    -1  
 $EndComp
 Text Notes 3400 2200 0    60   ~ 0
@@ -328,20 +306,20 @@ Text Notes 3450 4700 0    60   ~ 0
 K3
 Text Notes 3450 4900 0    60   ~ 0
 K4
-Text GLabel 1550 2050 0    60   Input ~ 0
+Text GLabel 1450 2050 0    60   Input ~ 0
 C
-Text GLabel 1550 2350 0    60   Input ~ 0
+Text GLabel 1450 1600 0    60   Input ~ 0
 D
 $Comp
-L motor M?
+L motor M1
 U 1 1 57D2BBF4
-P 6150 5550
-F 0 "M?" H 6150 5150 60  0000 C CNN
-F 1 "motor" H 6150 6000 60  0000 C CNN
-F 2 "" H 6150 5550 60  0001 C CNN
-F 3 "" H 6150 5550 60  0001 C CNN
-	1    6150 5550
-	1    0    0    -1  
+P -550 5750
+F 0 "M1" H -550 5350 60  0000 C CNN
+F 1 "motor" H -550 6200 60  0000 C CNN
+F 2 "" H -550 5750 60  0001 C CNN
+F 3 "" H -550 5750 60  0001 C CNN
+	1    -550 5750
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	4950 3000 5650 3000
@@ -349,8 +327,6 @@ Wire Wire Line
 	5650 3000 5650 2950
 Wire Wire Line
 	6600 3000 7300 3000
-Wire Wire Line
-	5550 4400 6650 4400
 Wire Wire Line
 	5200 4400 5250 4400
 Wire Wire Line
@@ -370,7 +346,7 @@ Wire Wire Line
 Wire Wire Line
 	6700 1550 6650 1550
 Wire Wire Line
-	6650 1550 6650 1850
+	6650 1850 6650 1550
 Wire Wire Line
 	7000 1550 7050 1550
 Wire Wire Line
@@ -378,13 +354,9 @@ Wire Wire Line
 Wire Wire Line
 	5450 1800 5450 1750
 Wire Wire Line
-	5450 1750 6850 1750
-Wire Wire Line
 	6850 1750 6850 1800
 Wire Wire Line
 	5400 4200 5400 4250
-Wire Wire Line
-	5400 4250 6800 4250
 Wire Wire Line
 	6800 4250 6800 4200
 Wire Wire Line
@@ -405,17 +377,7 @@ Wire Wire Line
 	7850 4200 7000 4200
 Connection ~ 7000 4200
 Wire Wire Line
-	6150 1450 6150 1750
-Connection ~ 6150 1750
-Wire Wire Line
-	6650 1850 5650 1850
-Connection ~ 6150 4250
-Wire Wire Line
-	5600 4150 6600 4150
-Wire Wire Line
-	6150 1850 6150 4150
-Connection ~ 6150 4150
-Connection ~ 6150 1850
+	5650 1850 6650 1850
 Wire Wire Line
 	8450 4950 8450 4400
 Wire Wire Line
@@ -423,29 +385,21 @@ Wire Wire Line
 Wire Wire Line
 	8750 2050 8750 4650
 Wire Wire Line
-	6150 4450 6150 4250
-Wire Wire Line
-	2300 3300 2500 3300
-Wire Wire Line
-	2300 3000 2500 3000
-Wire Wire Line
 	2400 3300 2400 3550
 Wire Wire Line
 	2000 3550 2800 3550
-Connection ~ 2400 3300
 Connection ~ 2400 3550
 Wire Wire Line
 	2400 2800 2400 3000
-Connection ~ 2400 3000
 Wire Wire Line
-	2800 3950 2000 3950
+	2000 3950 2800 3950
 Wire Wire Line
 	2400 4150 2400 3950
 Connection ~ 2400 3950
 Wire Wire Line
-	8750 4650 3650 4650
+	3650 4650 8750 4650
 Wire Wire Line
-	3650 4650 3650 3550
+	3650 3550 3650 4650
 Wire Wire Line
 	3650 3550 2750 3550
 Connection ~ 2750 3550
@@ -453,7 +407,7 @@ Wire Wire Line
 	3750 4400 3650 4400
 Connection ~ 3650 4400
 Wire Wire Line
-	1550 2050 3750 2050
+	1450 2050 3750 2050
 Wire Wire Line
 	3100 2050 3100 4950
 Wire Wire Line
@@ -461,23 +415,11 @@ Wire Wire Line
 Connection ~ 3100 3750
 Connection ~ 3100 2050
 Wire Wire Line
-	1700 3750 1600 3750
-Wire Wire Line
-	6300 4050 6150 4050
-Connection ~ 6150 4050
-Wire Wire Line
-	6300 4300 6150 4300
-Connection ~ 6150 4300
+	1600 3750 1700 3750
 Wire Wire Line
 	7050 3000 7050 2950
 Wire Wire Line
-	7300 3000 7300 5550
-Wire Wire Line
-	7300 5550 6650 5550
-Wire Wire Line
-	4950 5550 5650 5550
-Wire Wire Line
-	4950 5550 4950 3000
+	7300 3000 7300 5950
 Connection ~ 5200 3000
 $Comp
 L GND #PWR?
@@ -534,15 +476,110 @@ Wire Wire Line
 Text Notes 2100 4100 0    60   ~ 0
 NMOS NOR gate
 Wire Wire Line
-	1600 3750 1600 2350
-Wire Wire Line
-	1600 2350 1550 2350
+	1600 1600 1600 3750
 Text Notes 2050 4600 0    60   ~ 0
 control logic
-Text Notes 6050 2950 0    60   ~ 0
+Text Notes 5950 4850 0    60   ~ 0
 H-bridge
 Text Notes 7300 7500 0    60   ~ 0
 rp-hbridge\n
 Text Notes 7100 6850 0    60   ~ 0
 H-Bridge with 4xSPST relays driven by NPN transitors controlled by \nMOSFET-based NOR gate for interfacing tray motor to GPIO Raspberry Pi
+Wire Wire Line
+	5600 4150 6600 4150
+Wire Wire Line
+	6150 1300 6150 1150
+Wire Wire Line
+	5400 4250 6800 4250
+Wire Wire Line
+	5550 4400 5600 4400
+Wire Wire Line
+	5600 4400 5600 4150
+Wire Wire Line
+	6650 4400 6600 4400
+Wire Wire Line
+	6600 4400 6600 4150
+Connection ~ 6150 4150
+Wire Wire Line
+	5450 1750 6850 1750
+Wire Wire Line
+	6150 1600 6150 1750
+Connection ~ 6150 1750
+Wire Wire Line
+	6150 1850 6150 4150
+Connection ~ 6150 1850
+$Comp
+L +5V #PWR?
+U 1 1 57DE5242
+P 5900 1150
+F 0 "#PWR?" H 5900 1000 50  0001 C CNN
+F 1 "+5V" H 5900 1290 50  0000 C CNN
+F 2 "" H 5900 1150 50  0000 C CNN
+F 3 "" H 5900 1150 50  0000 C CNN
+	1    5900 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 1150 5900 1850
+Connection ~ 5900 1850
+Wire Wire Line
+	6150 4450 6150 4250
+Connection ~ 6150 4250
+Text Notes 2300 3350 0    30   ~ 0
+(R5 deleted)
+$Comp
+L +5V #PWR?
+U 1 1 57DE689B
+P 2400 2800
+F 0 "#PWR?" H 2400 2650 50  0001 C CNN
+F 1 "+5V" H 2400 2940 50  0000 C CNN
+F 2 "" H 2400 2800 50  0000 C CNN
+F 3 "" H 2400 2800 50  0000 C CNN
+	1    2400 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 57DE7EB2
+P 1600 1150
+F 0 "#PWR?" H 1600 1000 50  0001 C CNN
+F 1 "+5V" H 1600 1290 50  0000 C CNN
+F 2 "" H 1600 1150 50  0000 C CNN
+F 3 "" H 1600 1150 50  0000 C CNN
+	1    1600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57DE82D1
+P 1750 1800
+F 0 "#PWR?" H 1750 1550 50  0001 C CNN
+F 1 "GND" H 1750 1650 50  0000 C CNN
+F 2 "" H 1750 1800 50  0000 C CNN
+F 3 "" H 1750 1800 50  0000 C CNN
+	1    1750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1600 1450 1600
+Text GLabel 1450 1800 0    60   Input ~ 0
+GND
+Wire Wire Line
+	1450 1800 1750 1800
+Text GLabel 1450 1250 0    60   Input ~ 0
++5.0V
+Wire Wire Line
+	1450 1250 1600 1250
+Wire Wire Line
+	1600 1250 1600 1150
+Text GLabel 1400 5550 0    60   Input ~ 0
+M+
+Text GLabel 1400 5950 0    60   Input ~ 0
+M-
+Wire Wire Line
+	7300 5950 1400 5950
+Wire Wire Line
+	4950 5550 4950 3000
+Wire Wire Line
+	4950 5550 1400 5550
 $EndSCHEMATC
